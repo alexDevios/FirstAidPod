@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FirstAidPod'
-  s.version          = '0.0.2'
+  s.version          = '0.0.4'
   s.summary          = 'By far the most fantastic view I have seen in my entire life. No joke.'
  
   s.description      =  'This fantastic view changes its color gradually makes your app look fantastic!'
@@ -11,6 +11,6 @@ s.license = { :type => "MIT", :file => "LICENSE" }
  
   s.swift_version = '4.0'
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Source/Extensions/UIViewController/*.swift'
+  s.source_files = 'Source/**/**/*.swift'
  
 end
