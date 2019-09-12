@@ -1,9 +1,9 @@
 import UIKit
 import Foundation
 
-extension UIViewController {
-    public func getNameOfCreator() -> String {
-        return "Alex123"
+public extension UIViewController {
+    func getNameOfCreator() -> String {
+        return "Alex"
     }
 }
 
@@ -21,5 +21,9 @@ class CustomTextView: UITextView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func test() {
+        print(self.backgroundColor ?? "NONE!!!")
     }
 }
