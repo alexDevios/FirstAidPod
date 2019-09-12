@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FirstAidPod'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'By far the most fantastic view I have seen in my entire life. No joke.'
  
   s.description      =  'This fantastic view changes its color gradually makes your app look fantastic!'
