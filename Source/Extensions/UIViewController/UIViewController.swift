@@ -7,23 +7,28 @@ public extension UIViewController {
     }
 }
 
-class CustomTextView: UITextView {
-    override func awakeFromNib() {
+public class CustomTextView: UITextView {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         //
         self.backgroundColor = .red
     }
-    override init(frame: CGRect, textContainer: NSTextContainer?) {
+    override public init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         //
         self.backgroundColor = .red
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required internal init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    func test() {
-        print(self.backgroundColor ?? "NONE!!!")
+    public func test() {
+//        print(self.backgroundColor ?? "NONE!!!")
+        print(getName())
+    }
+    
+    private func getName() -> String {
+        return "test 123"
     }
 }
