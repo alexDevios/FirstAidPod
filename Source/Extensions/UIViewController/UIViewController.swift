@@ -1,10 +1,12 @@
 import UIKit
 import Foundation
 
+
 public extension UIViewController {
     func getNameOfCreator() -> String {
         return "Alex"
     }
+    
 }
 
 public class CustomTextView: UITextView {
@@ -24,7 +26,6 @@ public class CustomTextView: UITextView {
     }
     
     public func test() {
-//        print(self.backgroundColor ?? "NONE!!!")
         print(getName())
     }
     
