@@ -13,6 +13,6 @@ s.license = { :type => "MIT", :file => "LICENSE" }
   s.ios.deployment_target = '10.0'
   s.source_files = 'Source/**/**/*.{swift}'
 s.framework = "UIKit"
-s.dependency = 'Alamofire'
+s.dependency 'Alamofire'
  
 end
