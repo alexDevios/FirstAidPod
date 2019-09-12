@@ -12,6 +12,7 @@
 		3B7A23B0232A2A5B0098FF8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A23AE232A2A5B0098FF8C /* Main.storyboard */; };
 		3B7A23B2232A2A5C0098FF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A23B1232A2A5C0098FF8C /* Assets.xcassets */; };
 		3B7A23B5232A2A5C0098FF8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A23B3232A2A5C0098FF8C /* LaunchScreen.storyboard */; };
+		3B7A23BE232A2C8D0098FF8C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A23BD232A2C8D0098FF8C /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3B7A23B1232A2A5C0098FF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7A23B4232A2A5C0098FF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B7A23B6232A2A5C0098FF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7A23BD232A2C8D0098FF8C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		3B7A239E232A2A5B0098FF8C = {
 			isa = PBXGroup;
 			children = (
+				3B7A23BC232A2C7D0098FF8C /* Source */,
 				3B7A23A9232A2A5B0098FF8C /* FirstAidPod */,
 				3B7A23A8232A2A5B0098FF8C /* Products */,
 			);
@@ -62,6 +65,30 @@
 				3B7A23B6232A2A5C0098FF8C /* Info.plist */,
 			);
 			path = FirstAidPod;
+			sourceTree = "<group>";
+		};
+		3B7A23BC232A2C7D0098FF8C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A23BF232A2C9A0098FF8C /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3B7A23BF232A2C9A0098FF8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A23C0232A2CA40098FF8C /* UIViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B7A23C0232A2CA40098FF8C /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A23BD232A2C8D0098FF8C /* UIViewController.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			files = (
 				3B7A23AD232A2A5B0098FF8C /* ViewController.swift in Sources */,
 				3B7A23AB232A2A5B0098FF8C /* AppDelegate.swift in Sources */,
+				3B7A23BE232A2C8D0098FF8C /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +309,10 @@
 		3B7A23BA232A2A5C0098FF8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22SP4Q82WD;
 				INFOPLIST_FILE = FirstAidPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +327,10 @@
 		3B7A23BB232A2A5C0098FF8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22SP4Q82WD;
 				INFOPLIST_FILE = FirstAidPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
