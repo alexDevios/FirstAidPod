@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
  
   s.description      =  'This fantastic view changes its color gradually makes your app look fantastic!'
   s.homepage         = 'https://github.com/alexDevios/FirstAidPod'
-  s.license          = 'MIT'
+s.license = { :type => "MIT", :file => "LICENSE" }
   s.author           = 'Alex'
   s.source           = { :git => 'https://github.com/alexDevios/FirstAidPod.git', :tag => s.version.to_s }
  
