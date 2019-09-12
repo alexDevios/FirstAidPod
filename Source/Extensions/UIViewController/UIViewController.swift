@@ -1,10 +1,18 @@
 import UIKit
 import Foundation
-
+import Alamofire
 
 public extension UIViewController {
     func getNameOfCreator() -> String {
         return "Alex"
+    }
+    
+    func getData() {
+        Alamofire.request("https://google.com").response { (response) in
+            guard let response = response.response else { return }
+            print(response.statusCode)
+            print(response)
+        }
     }
     
 }
