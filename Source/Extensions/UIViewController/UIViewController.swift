@@ -3,7 +3,7 @@ import Foundation
 
 extension UIViewController {
     public func getNameOfCreator() -> String {
-        return "Alex"
+        return "Alex123"
     }
 }
 
